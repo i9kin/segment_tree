@@ -1,0 +1,140 @@
+\documentclass[8pt]{beamer}% тип документа
+\usepackage{caption}
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[main=russian,english]{babel}
+\usetheme{AnnArbor}
+\usefonttheme{serif}
+\geometry{paperwidth=140mm,paperheight=105mm}
+
+\title{Разработка пособия "Структура данных «Дерево отрезков» и её применение в задачах"}
+\author{Девятериков Иван}
+
+% 1 направление проектной деятельности и тема проекта;
+% 2 актуальность проекта
+% 3 положительные эффекты от реализации проекта, важные как для самого автора, так и для других людей
+% 4 ресурсы (как материальные, так и нематериальные), необходимые для реализации проекта, возможные источники ресурсов
+% 5 риски реализации проекта и сложности, которые ожидают обучающегося при реализации данного проекта
+
+\begin{document}% начало презентации
+	
+	\begin{frame}% первый слайд
+		\titlepage
+	\end{frame}
+	
+	\begin{frame}{Направление проекта}
+		\begin{block}{Разработка пособия "Структура данных «Дерево отрезков» и её применение в задачах"}
+			научно-технические исследование
+		\end{block}
+		
+		
+		\begin{block}{Задачи}
+			\begin{itemize}
+				\item Подобрать материал, в соответствии с рабочей программой.
+				\item Определить структуру и содержание учебного пособия.
+				\item Оформить теоретический материал согласно структуре.
+				\item Составить задачи на данную тему и написать к ним разбор.
+				\item Проверить составленное пособие на тестовой группе.
+			\end{itemize}
+		\end{block}
+	
+	\end{frame}
+
+	\begin{frame}{Актуальность проекта}
+		Методическое обеспечение является одной из важнейших составляющих учебного процесса, особенно в части самостоятельной работы школьников.
+		
+		Материал, представленный в сети интернет, часто ориентирован на студентов IT-специальностей. В то же самое время структура данных Дерево отрезков является универсальной и мощной структурой данных, для которой можно реализовать неограниченный набор операций. Знание такой структуры данных чрезвычайно полезно, в том числе при подготовке к олимпиадам высокого уровня.
+		
+	\end{frame}
+
+	\begin{frame}{Эффекты от реализации проекта}
+		\begin{block}{Для других людей}
+			\begin{itemize}
+				\item Изучение данной и смежной с ней тем.
+				\item Умение решать сложные задачи по программированию.
+			\end{itemize}
+		\end{block}
+	
+		\begin{block}{Для меня лично}
+			\begin{itemize}
+				\item Погружение в тему проекта.
+				\item Решение новых и интересных задач.
+				\item Умении писать, думать, анализировать, планировать.
+				\item Умение верстать книгу с помощью языка \LaTeX.
+			\end{itemize}
+		\end{block}
+	\end{frame}
+
+	\begin{frame}{Необходимое для реализации проекта}
+		\begin{block}{Ресурсы}
+			\begin{itemize}
+				\item Компьютер.
+			\end{itemize}
+		\end{block}
+	
+		\begin{block}{Источники ресурсов}
+			\begin{itemize}
+				
+				\item \href{https://codeforces.com}{codeforces} - площадка, где регулярно проводятся соревнования, система с более 6700 официальных задач
+				
+				\item \href{https://polygon.codeforces.com}{polygon} - сервис для подготовки задач по программированию.
+				
+				\item \href{https://codeforces.com/blog/entry/83170}{бакалаврская диссертация «Compressed segment trees and merging sets in $O(N \log U)$» } (Lucian Bicsi, Бухарестский университет)
+				
+				
+				\item Книга «Конспект лекций по алгоритмам» (Сергей Копелиович, НИУ ВШЭ)
+				
+				\item \href{https://codeforces.com/edu/course/2}{Учебный курс} (Павел Маврин, Университет ИТМО)
+				\item \href{https://codeforces.com/blog/entry/57319}{A simple introduction to "Segment tree beats"} (Ruyi Ji, Пекинский университет)
+				
+				\item \href{https://codeforces.com/blog/entry/18051}{Efficient and easy segment trees} (\href{http://finals.snarknews.info/index.cgi?data=2011/teams/knu&class=final2011&year=2011}{Александр Бачериков})
+				
+				\item \href{https://codeforces.com/blog/entry/15890}{Algorithm Gym :: Everything About Segment Trees} (AmirMohammad Dehghan, Массачусетский технологический институт)
+				
+				\item \href{https://codeforces.com/blog/entry/80195}{Matrix Exponentiation tutorial} (Kamil Debowski, Варшавский университет)
+				
+				\item \href{https://codeforces.com/blog/entry/43230}{Mo's Algorithm on Trees} (Animesh Fatehpuria, Технологический институт Джорджии)
+				
+				\item \href{https://codeforces.com/blog/entry/78898}{Tutorial on Permutation Tree} (Ashley Khoo)
+				
+				\item \href{https://codeforces.com/blog/entry/61364}{Searching Binary Indexed Tree in $O( \log(N))$ using Binary Lifting} (Siddharth Nayya, Делийский технологический университет)
+				
+				\item \href{https://e-maxx.ru/algo/segment_tree}{e-maxx.ru/algo/segment\_tree}
+				
+				\item \href{https://codeforces.com/blog/entry/15729}{много структур}
+				
+				\item Так же есть Китайскии форумы (я нагуглил китайский аналог статей и там один миоиард китайцев решают задачи с cf) (\href{https://blog.csdn.net/weixin_43826249/article/details/102600666}{Вот пример просто транслейт или учите Китайский})
+				
+			\end{itemize}
+		\end{block}
+		
+		
+	\end{frame}
+
+
+
+
+
+	\begin{frame}{Реализация данного проекта}
+		\begin{block}{Риски}
+			\begin{itemize}
+				\item -
+			\end{itemize}
+		\end{block}
+		
+		\begin{block}{Cложности}
+			\begin{itemize}
+				\item Изучение вёрстки в \LaTeX.
+				\item Анализ книг и статей на русском, английском и др.
+				\item Написание или поиск подходящих задач.
+			\end{itemize}
+		\end{block}
+	\end{frame}
+
+
+
+
+
+
+\end{document}
